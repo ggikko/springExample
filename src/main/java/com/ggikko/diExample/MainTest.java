@@ -1,5 +1,6 @@
 package com.ggikko.diExample;
 
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
@@ -24,6 +25,13 @@ public class MainTest {
 		System.out.println(person2.getAge());
 		System.out.println(person2.getHeight());
 		System.out.println(person2.getHobby());
+		
+		AnnotationConfigApplicationContext ctx1 = new AnnotationConfigApplicationContext(ApplicationContext3.class);
+		Person2 person3 = ctx1.getBean("person3", Person2.class);
+		System.out.println(person3.getName());
+		System.out.println(person3.getAge());
+		System.out.println(person3.getHeight());
+		System.out.println(person3.getHobby());
 		
 		
 	}

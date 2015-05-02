@@ -9,12 +9,18 @@ public class Person2 {
 	private double height;
 	private ArrayList<String> hobby;
 
+
+	public Person2() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public Person2(String name, int age, double height, ArrayList<String> hobby) {
 		this.name = name;
 		this.age = age;
 		this.height = height;
 		this.hobby = hobby;
 	}
+
 
 	public String getName() {
 		return name;

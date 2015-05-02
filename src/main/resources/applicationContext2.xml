@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="person2" class="com.ggikko.diExample.Person2">
+		<constructor-arg value="박지홍님" />
+		<constructor-arg value="29" />
+		<constructor-arg value="180.4" />
+		<constructor-arg>
+			<list>
+				<value>야구</value>
+				<value>수영</value>
+			</list>
+		</constructor-arg>
+	</bean>
+
+
+</beans>

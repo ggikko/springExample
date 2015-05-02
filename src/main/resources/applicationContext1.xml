@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="person1" class="com.ggikko.diExample.Person1">
+		<property name="name">
+			<value>박지홍</value>
+		</property>
+		<property name="age">
+			<value>28</value>
+		</property>
+		<property name="height">
+			<value>176.5</value>
+		</property>
+		<property name="hobby">
+			<list>
+				<value>농구</value>
+				<value>축구</value>
+				<value>배드민턴</value>
+			</list>
+		</property>
+
+	</bean>
+
+
+</beans>
